@@ -32,6 +32,7 @@ export const TextInputComponent: React.FC = () => {
         placeholder="Номер машины"
         value={orderCar.number}
         maxLength={4}
+        keyboardType="numeric"
         onChangeText={(val) => updateForm(val, 'number')}
       />
 
@@ -39,6 +40,7 @@ export const TextInputComponent: React.FC = () => {
         style={styles.input}
         placeholder="Телефон клиента"
         value={orderCar.phone}
+        keyboardType="numeric"
         onChangeText={(val) => updateForm(val, 'phone')}
       />
 

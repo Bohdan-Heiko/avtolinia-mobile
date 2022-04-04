@@ -3,6 +3,8 @@ import { View, StyleSheet, Text, Button, TouchableOpacity } from "react-native"
 
 
 export const BockedToday: React.FC = () => {
+ 
+  
 
   return (
     <View style={styles.bockedToday}>
@@ -16,7 +18,7 @@ export const BockedToday: React.FC = () => {
         <View style={styles.button_container}>
           <TouchableOpacity style={styles.btn}>
             <Button
-              onPress={() => console.log('Позвонить')}
+              onPress={() => console.log('123')}
               title="Позвонить"
               color="#FF7212"
             />
@@ -24,7 +26,7 @@ export const BockedToday: React.FC = () => {
 
           <TouchableOpacity style={styles.btn}>
             <Button
-              onPress={(id) => console.log('Принять', id.currentTarget)}
+              onPress={(id) => console.log('Принять')}
               title="Принять"
               color="#0066FF"
 
@@ -68,6 +70,7 @@ const styles = StyleSheet.create({
   },
   description_text: {
     fontSize: 15,
+    marginBottom: 20,
   },
   button_container: {
     flexDirection: 'row',

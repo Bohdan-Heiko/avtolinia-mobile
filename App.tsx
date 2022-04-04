@@ -1,16 +1,15 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Navigation } from './src/components/navigation/Navigation';
 
 const App: React.FC = () => {
 
-  
+
 
   return (
     <View style={styles.container}>
-      <Text>gs</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="light"  />
       <Navigation />
     </View>
   );
