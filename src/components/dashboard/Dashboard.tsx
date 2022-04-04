@@ -1,5 +1,6 @@
-import { View, StyleSheet, ScrollView, Text, } from "react-native"
+import { View, StyleSheet, ScrollView, Text, TextInput, Button, TouchableOpacity, } from "react-native"
 import { BockedToday } from "./BockedToday";
+import { CarsAtWork } from "./CarsAtWork";
 import { TextInputComponent } from "./TextInputComponent";
 
 
@@ -14,8 +15,12 @@ export const Dashboard: React.FC = () => {
 
       <View style={styles.bockedToday_container}>
         <Text style={styles.title}>Записаны на сегодня</Text>
-       
+        <BockedToday />
+        <BockedToday />
       </View>
+
+      <CarsAtWork />
+
     </ScrollView>
   )
 }
